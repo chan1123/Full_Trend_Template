@@ -1,13 +1,11 @@
 import os
 import time
 import random
-
 import pandas as pd
 
 from scraping_var_functions import base_url, mm_params, position
 from scraping_var_functions import return_filename, convert_datatypes_technical, trend_template_filter
 from scraping_var_functions import return_single_table_from_finviz
-
 
 def scrap_TT():
 

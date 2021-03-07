@@ -1,5 +1,3 @@
-# Libraries required
-
 import datetime
 import glob
 import re
@@ -28,7 +26,6 @@ parameters = {'f': 'ind_stocksonly', 'v': 111}
 position = 14
 
 category_list = ['Sector', 'Industry', 'Country']
-
 
 ######################################################################
 # Functions
@@ -68,7 +65,7 @@ def return_filename():
     """
 
     date_time = datetime.datetime.now().strftime("%Y%m%d")
-    filename = './Finviz/' + date_time + '_total' + '.csv'
+    filename = './assets/Finviz/' + date_time + '_total' + '.csv'
     return filename
 
 
@@ -98,11 +95,11 @@ def latest_file():
     :return: filename
     """
 
-    file_list = glob.glob("Finviz/*.csv")
+    file_list = glob.glob("assets/Finviz/*.csv")
     combined_str = ''.join(file_list)
 
-    file_date = re.findall(r'\/(.*?)\_', combined_str)
-    filename = 'Finviz/' + max(file_date) + '_total.csv'
+    file_date = re.findall(r'Finviz\/(.*?)\_', combined_str)
+    filename = 'assets/Finviz/' + max(file_date) + '_total.csv'
 
     print(filename)
 

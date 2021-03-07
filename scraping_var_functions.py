@@ -1,7 +1,6 @@
 # Libraries required
 
 import datetime
-
 import numpy as np
 import pandas as pd
 import requests
@@ -83,7 +82,7 @@ def return_filename():
     """
 
     date_time = datetime.datetime.now().strftime("%Y%m%d")
-    filename = './Trend_Template/' + date_time + '_TT' + '.csv'
+    filename = './assets/Trend_Template/' + date_time + '_TT' + '.csv'
     return filename
 
 

@@ -23,16 +23,16 @@ numeric_list = [
     'RS Rating',
     'Vol. % Change',
     'Vol. (1000s)',
-    'Industry Group Rank',
-    '# of Funds - last reported qrtr',
-    'Pretax Margin',
-    'Curr Yr EPS Est. % Chg.',
-    'Curr Qtr EPS Est. % Chg.',
-    'Last Qtr EPS % Chg.',
-    'Last Qtr Sales % Chg.',
-    'Div Yield',
-    'PE Ratio',
-    'Vol- 50 Day Avg. (1000s)'
+    # 'Industry Group Rank',
+    # '# of Funds - last reported qrtr',
+    # 'Pretax Margin',
+    # 'Curr Yr EPS Est. % Chg.',
+    # 'Curr Qtr EPS Est. % Chg.',
+    # 'Last Qtr EPS % Chg.',
+    # 'Last Qtr Sales % Chg.',
+    # 'Div Yield',
+    # 'PE Ratio',
+    # 'Vol- 50 Day Avg. (1000s)'
 ]
 
 abcde_list = [

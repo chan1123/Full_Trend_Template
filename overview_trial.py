@@ -1,7 +1,6 @@
 import os
 import time
 import random
-
 import pandas as pd
 
 from overview_var_functions import base_url, parameters, position
@@ -35,9 +34,6 @@ def scrap_overview():
     filtered = convert_datatypes_overview(results)
     filtered.to_csv(filename)
     return filtered
-
-
-#df_overview = scrap_overview()
 
 df_overview = pd.read_csv(latest_file(), index_col='Ticker')
 

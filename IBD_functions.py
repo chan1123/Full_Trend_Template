@@ -39,7 +39,7 @@ def convert_datatypes_ibd(df):
     for item in abcde_plus_list:
         df[item] = df[item].map(abcde_plus_map)
 
-    df['IPO Date'] = pd.to_datetime(df['IPO Date'])
+    # df['IPO Date'] = pd.to_datetime(df['IPO Date'])
 
     return df
 
@@ -50,11 +50,13 @@ def latest_file():
     :return: filename
     """
 
-    file_list = glob.glob("IBD_Excel/*.xlsx")
+    file_list = glob.glob("assets/IBD_Excel/*.xlsx")
+
     combined_str = ''.join(file_list)
 
-    file_date = re.findall(r'\/(.*?)\_', combined_str)
-    filename = 'IBD_Excel/' + max(file_date) + '_IBD.xlsx'
+
+    file_date = re.findall(r'Excel\/(.*?)\_', combined_str)
+    filename = 'assets/IBD_Excel/' + max(file_date) + '_IBD.xlsx'
     
     print(filename)
     
