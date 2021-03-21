@@ -82,7 +82,7 @@ def return_filename():
     """
 
     date_time = datetime.datetime.now().strftime("%Y%m%d")
-    filename = './assets/Trend_Template/' + date_time + '_TT' + '.csv'
+    filename = './assets/TT_without_RS/' + date_time + '_TT' + '.csv'
     return filename
 
 
