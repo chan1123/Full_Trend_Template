@@ -7,7 +7,7 @@ def return_filename():
     """
 
     date_time = datetime.datetime.now().strftime("%Y%m%d")
-    filename = './assets/Trend_Template/' + date_time + '_Full_TT_' + '.csv'
+    filename = './assets/Trend_Template/' + date_time + '_Full_TT' + '.csv'
     print(filename)
     return filename
 
